@@ -44,7 +44,7 @@ public class Lab1 {
     public static void matrix_print(double[][] matrix){
         for (int i = 0; i < matrix.length; i++){
             for (int j = 0; j < matrix[0].length; j++){
-                System.out.printf("%.3f \t", matrix[i][j]);
+                System.out.printf("%.2f \t", matrix[i][j]);
             }
         }
     }
