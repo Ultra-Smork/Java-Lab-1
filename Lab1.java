@@ -1,13 +1,13 @@
 public class Lab1 {
     public static void main(String[] args) {
-        long[] n  = new long[9];
+        long[] s  = new long[9];
         float[] x = new float[13];
         double[][] w = new double[9][13]; // double because of problems with typecasting
 
         int fill_index = 0; // temp util variable
 
         for (long i = 6; i <= 22; i += 2){
-            n[fill_index] = i;
+            s[fill_index] = i;
             fill_index++;
         }
         fill_index = 0;
@@ -17,9 +17,9 @@ public class Lab1 {
             fill_index ++;
         }
 
-        for (int i = 0; i < n.length; i++){
+        for (int i = 0; i < s.length; i++){
             for (int j = 0; j < x.length; j++){
-                int curr = (int) n[i];
+                int curr = (int) s[i];
                 switch(curr){
                     case 8 -> w[i][j] = equation1(x[j]);
                     case 10, 12, 14, 16 -> w[i][j] = equation2(x[j]);
